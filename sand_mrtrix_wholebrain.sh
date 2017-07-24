@@ -1,6 +1,6 @@
 #!/bin/bash
 ## Sandra Hanekamp,2017
-# make your .b file first using matlab use create_b_file_sand.m
+# make your .b file first using matlab use sand_create_b_file.m
 ## build paths
 ##change the path to your topdir (subject folder)
 TOPDIR=/path/to/your/subject/folder
