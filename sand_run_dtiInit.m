@@ -19,7 +19,7 @@ Outdir = '/path/to/where/you/want/your/data';%this can be the same path as Dir
     dwp.bvecsFile = char(fullfile(Dir, Subj, '/bvec.bvec'));%or apa.bvec
     dwp.bvalsFile =  char(fullfile(Dir, Subj, '/bval.bval'));%or apa.bval
     dwp.outDir	= char(fullfile(Outdir, Subj));
-    dtiInit_sand(char(fullfile(Dir, Subj, '/dwi.nii.gz')), char(fullfile(Dir, Subj, '/T1_ACPC.nii.gz')), dwp); %use dtiInit_sand script instead of default dtiInit, the default gives motion correction error
+    sand_dtiInit(char(fullfile(Dir, Subj, '/dwi.nii.gz')), char(fullfile(Dir, Subj, '/T1_ACPC.nii.gz')), dwp); %use sand_dtiInit script instead of default dtiInit, the default gives motion correction error
 
 
 % %loop all subjects
@@ -37,7 +37,7 @@ Outdir = '/path/to/where/you/want/your/data';%this can be the same path as Dir
 %     dwp.bvecsFile = char(fullfile(Dir, Subj(ii), '/bvec.bvec'));%make sure your files names are like this
 %     dwp.bvalsFile =  char(fullfile(Dir, Subj(ii), '/bval.bval'));
 %     dwp.outDir	= char(fullfile(Outdir, Subj(ii)));
-%     dtiInit_sand(char(fullfile(Dir, Subj(ii), '/data.nii.gz')), char(fullfile(Dir, Subj(ii), '/average.nii.gz')), dwp); %use dtiInit_sand script instead of default dtiInit, the default gives motion correction error
+%     sand_dtiInit(char(fullfile(Dir, Subj(ii), '/data.nii.gz')), char(fullfile(Dir, Subj(ii), '/T1_ACPC.nii.gz')), dwp); %use sand_dtiInit script instead of default dtiInit, the default gives motion correction error
 % 
 % end 
 
