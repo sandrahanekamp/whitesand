@@ -6,10 +6,10 @@ for subj in HC01 HC02 GL01 GL02; do
     echo 'Working very hard for:' ${subj}
 
 ## the path to the code that you want to run
-    bash /N/dc2/projects/lifebid/Sandra/path/to/shell/script/mrtrix_wholebrain_sand.sh ${subj}
+    bash /N/dc2/projects/lifebid/Sandra/path/to/shell/script/sand_mrtrix_wholebrain.sh ${subj}
 done
 
-## then run this script by cd to code folder, and bash basic_loop.sh
+## then run this script by cd to code folder, and bash sand_basic_loop.sh
 
 
 
